@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Helvetica; /* Гарнитура шрифта */
+    src: url(../fonts/Helvetica.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: Helvetica-Bold; /* Гарнитура шрифта */
+    src: url(../fonts/Helvetica-Bold.ttf); /* Путь к файлу со шрифтом */
+   }

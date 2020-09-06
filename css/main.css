@@ -51,6 +51,10 @@ body {
     padding: 0 !important;
 }
 
+.slider {
+    padding-bottom: 170px;
+}
+
 .show a,
 .collapsing a {
     font-size: 24px;
@@ -80,4 +84,10 @@ body {
 
 .carousel-control-next, .carousel-control-prev {
     width: 90px;
+}
+
+
+.cards p {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
 }
