@@ -10,6 +10,7 @@ body {
 
 .container {
     max-width: 960px !important;
+    background-color: #fdfdfd;
 }
 
 
@@ -24,7 +25,7 @@ body {
 
 .navbar-brand span{
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 45px;
     color: #e8603c;
 }
 
@@ -46,13 +47,26 @@ body {
 
 .nav-link {
     text-transform: uppercase;
-    font-size: 16px;
-    color: #b9b9b9;
+    font-size: 20px;
     padding: 0 !important;
+    color:  #b9b9b9 !important;
 }
+
 
 .slider {
     padding-bottom: 170px;
+    position: relative;
+}
+
+.orange-block {
+    height: 60px;
+    width: 100%;
+    background-color: #f3af9d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .show a,
@@ -86,8 +100,54 @@ body {
     width: 90px;
 }
 
+.carousel-caption {
+    background-color: rgba(232, 102, 60, 0.8);
+    width: 415px;
+    text-align: left;
+    padding: 20px;
+    left: 50px;
+}
+
+.carousel-caption h4 {
+    padding-bottom: 8px;
+}
+
+.carousel-caption p {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+}
+
+.cards h3 {
+    font-size: 24px;
+    color: #e8663c;
+    margin: 0;
+}
+
+.cards svg {
+    padding-right: 20px;
+    font-size: 85px;
+    color: #e8663c;
+}
 
 .cards p {
     font-family: Helvetica, sans-serif;
     font-size: 12px;
+    color: #414141;
+    line-height: 1.7;
+    padding-bottom: 8px;
 }
+
+.card-button {
+    background-color: #e8663c;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+
+}
+
