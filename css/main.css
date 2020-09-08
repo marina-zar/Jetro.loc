@@ -123,8 +123,17 @@ body {
     align-items: center;
 }
 
-.cards h3 {
-    font-size: 24px;
+.cards {
+    padding-bottom: 20px;
+}
+
+.cards .col-md-4 {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards h4 {
     color: #e8663c;
     margin: 0;
 }
@@ -144,10 +153,84 @@ body {
 }
 
 .card-button {
+    width: 65px;
+    border: 2px solid #e8663c;
     background-color: #e8663c;
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
+    transition: all 0.3s;
+    margin-top: auto;
 
 }
 
+.card-button:hover {
+    box-sizing: border-box !important;
+    background-color: #fff;
+    color: #e8663c;
+    padding-right: 30px;
+}
+
+.works {
+    margin-bottom: 50px;
+}
+
+.works-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.works-title h4 {
+    flex-basis: 130px;
+    margin-bottom: 0;
+    color: #e8603c;
+}
+
+.title-line { 
+    height: 20px;
+    background: repeating-linear-gradient(-45deg, #c3c3c3 0, #c3c3c3 1px, transparent 1px, transparent 3px);
+    flex: auto;
+}
+
+.work-card {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 13px;
+    border: 1px solid #c3c3c3;
+    border-top: none;
+}
+
+.card-text {
+    color: #b9b9b9; 
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 0.9;
+}
+
+.card-body time {
+    color: #e8603c;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .slider {
+        padding-bottom: 30px
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+
+/* @media screen and (max-width: 767px) {
+    .card-button {
+        display: block;
+        width: 100%;
+    }
+} */
