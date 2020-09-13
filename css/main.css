@@ -5,6 +5,11 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 
 /* Modules rules */
 
@@ -13,11 +18,13 @@ body {
     background-color: #fdfdfd;
 }
 
-
-
 .active a {
     color: #e8663c !important;
 }
+
+
+
+/* **********   header   ********* */
 
 .navbar {
     padding: 0;
@@ -52,6 +59,9 @@ body {
     color:  #b9b9b9 !important;
 }
 
+
+
+/* **********   slider   ********* */
 
 .slider {
     padding-bottom: 170px;
@@ -118,10 +128,11 @@ body {
     color: #fff;
 }
 
-.card-title {
-    display: flex;
-    align-items: center;
-}
+
+
+
+
+/* **********   cards   ********* */
 
 .cards {
     padding-bottom: 20px;
@@ -131,6 +142,11 @@ body {
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
 }
 
 .cards h4 {
@@ -170,6 +186,12 @@ body {
     padding-right: 30px;
 }
 
+
+
+
+
+/* **********   works   ********* */
+
 .works {
     margin-bottom: 50px;
 }
@@ -192,9 +214,26 @@ body {
     flex: auto;
 }
 
-.work-card {
+.works-card {
     border: none;
     margin-bottom: 20px;
+}
+
+.works-card-link {
+    background-color: #000;
+    display: block;
+}
+
+.card-img-top {
+   /*  width: 100%;
+    height: auto; */
+    transition: all 0.3s;
+    margin-top: -1px;
+}
+
+.card-img-top:hover,
+.card-img-top:active {
+    opacity: 0.6;
 }
 
 .card-body {
@@ -204,16 +243,27 @@ body {
 }
 
 .card-text {
+    display: block;
     color: #b9b9b9; 
     font-size: 20px;
     margin-bottom: 0;
     line-height: 0.9;
 }
 
+.card-text:hover,
+.card-text:active {
+    color: #e8603c;
+}
+
 .card-body time {
     color: #e8603c;
     font-size: 14px;
 }
+
+
+
+
+/* **********   footer   ********* */
 
 footer {
     position: relative;
@@ -268,7 +318,6 @@ footer li {
 
 footer li a {
     display: block;
-    /* width: 100%; */
     height: 100%;
 }
 
@@ -304,11 +353,16 @@ footer li a {
     scale: 0.85;
 }
 
-.orange-block {
+ footer .orange-block {
     height: 100%;
 }
 
 
+
+
+
+
+/* **********   media   ********* */
 
 @media screen and (max-width: 991px) {
     .slider {
@@ -319,11 +373,3 @@ footer li a {
         display: none;
     }
 }
-
-
-/* @media screen and (max-width: 767px) {
-    .card-button {
-        display: block;
-        width: 100%;
-    }
-} */
